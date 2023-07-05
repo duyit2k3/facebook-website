@@ -1,0 +1,46 @@
+.story {
+    width: 650px;
+    height: 250px;
+    background-color: white;
+    border-radius: 8px;
+}
+.story-tool {
+    display: flex;
+}
+
+.icon-story-tool, 
+.icon-reel-tool,
+.icon-meet-tool
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+}
+.icon-story-tool .tooltip, 
+.icon-reel-tool .tooltip,
+.icon-meet-tool .tooltip
+{
+    color: rgb(128, 126, 126);
+}
+.icon-story-tool:hover, 
+.icon-reel-tool:hover,
+.icon-meet-tool:hover
+{
+    background-color: rgb(209, 209, 209);
+}
+
+.story-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0px 5px 5px;
+}
+.story-user {
+    background-color: rgb(24, 119, 242);
+    width: 110px;
+    height: 180px;
+    margin-right: 4px;
+    border-radius: 10px;
+}

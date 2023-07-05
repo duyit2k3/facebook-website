@@ -1,0 +1,121 @@
+.sidebar-right {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    top: 65px;
+}
+.advertisement {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+.advertisement:hover {
+    background-color: rgb(213, 212, 212);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text {
+    font-weight: bold;
+    padding-left: 6px;
+}
+.tool-contact {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.call-logo, 
+.search-logo-contact,
+.more-logo 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.call,
+.search-contact,
+.more 
+{
+    padding: 5px 5px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+    position: relative;
+}
+.call .tooltip,
+.search-contact .tooltip,
+.more .tooltip 
+{
+    position: absolute;
+    bottom: -30px;
+    right: 3px;  
+    color: white;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+.call:hover,
+.search-contact:hover,
+.more:hover
+{
+    background-color: rgb(218, 217, 217);
+}
+
+.call:hover .tooltip, 
+.search-contact:hover .tooltip,
+.more:hover .tooltip
+{
+    opacity: 1;
+}
+
+.user-1 {
+    display: flex;
+    padding: 10px 10px 10px 6px;
+    transition: background-color 0.15s;
+}
+.user-1:hover {
+    background-color: rgb(223, 223, 223);
+    border-radius: 8px;
+}
+.user-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+    z-index: 0;
+}
+.status-user {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: green;
+    bottom: -3px;
+    z-index: 1;
+}

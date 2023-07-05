@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    padding-top: 60px;
+    padding-left: 310px;
+    padding-right: 310px;
+    background-color: rgb(245, 246, 247);
+    height: 2000px;
+    display: flex;
+    justify-content: center;
+}

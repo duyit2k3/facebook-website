@@ -1,0 +1,51 @@
+.sidebar-left {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    z-index: 200;
+}
+.home,
+.main-page,
+.watch,
+.friend,
+.marketplace 
+{
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.home-logo, 
+.main-page-logo,
+.watch-logo,
+.friend-logo,
+.market-logo 
+{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.home .tooltip, 
+.main-page .tooltip,
+.watch .tooltip,
+.friend .tooltip,
+.marketplace .tooltip
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.home:hover,
+.main-page:hover,
+.watch:hover,
+.friend:hover,
+.marketplace:hover 
+{
+    background-color: rgb(225, 224, 224);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
